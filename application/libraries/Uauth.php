@@ -47,6 +47,8 @@ class Uauth extends Ulogin {
 		return $this->userdata;
 	}
 
+/** Завершает сессию и очищает сохраненные переменные
+*/
 	public function logout() {
 		parent::logout();
 		unset($_SESSION[self::session_key]);
